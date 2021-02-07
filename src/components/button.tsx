@@ -1,6 +1,9 @@
-const Button = ({color, label, isDisabled}: Button) => {
+const Button = ({color, label, isDisabled, onClick}: Button) => {
     return (
-        <button className={`p-2 bg-${color}-400`} disabled={isDisabled}>
+        <button
+            className={`p-1 rounded-md flex-grow-0 w-24 text-white bg-${color}-400`}
+            disabled={isDisabled}
+            onClick={onClick}>
             {label}
         </button>
     );

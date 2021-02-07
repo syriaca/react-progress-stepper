@@ -1,7 +1,8 @@
 type Button = {
   color: string,
   label: string,
-  isDisabled: boolean
+  isDisabled: boolean,
+  onClick?: () => void;
 }
 
 type Step = Button;
