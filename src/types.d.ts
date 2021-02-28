@@ -3,6 +3,11 @@ type Button = {
   label: string,
   isDisabled: boolean,
   onClick?: () => void;
+  id?: number;
+}
+
+type Stepper = {
+  steps: number;
 }
 
 type Step = Button;
