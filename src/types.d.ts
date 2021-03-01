@@ -8,6 +8,8 @@ type Button = {
 
 type Stepper = {
   steps: number;
+  currentStep: number;
+  color: string;
 }
 
 type Step = Button;
