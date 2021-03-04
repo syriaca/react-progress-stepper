@@ -3,7 +3,6 @@ type Button = {
   label: string,
   isDisabled: boolean,
   onClick?: () => void;
-  id?: number;
 }
 
 type Stepper = {
@@ -12,4 +11,11 @@ type Stepper = {
   color: string;
 }
 
-type Step = Button;
+type Step = {
+  color: string,
+  label: string,
+  isDisabled: boolean,
+  currentStep: number,
+  onClick?: () => void;
+  id: number;
+};

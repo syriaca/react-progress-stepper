@@ -5,7 +5,13 @@ const Stepper = ({steps, currentStep, color}: Stepper) => {
     let stepList = [];
     
     for(let i = 1; i <= steps; i++) {
-        stepList.push(<Step id={i} key={i} color={color} label={`${i}`} isDisabled={i === currentStep ? false : true} />)
+        stepList.push(<Step
+            currentStep={currentStep}
+            id={i}
+            key={i} 
+            color={color} 
+            label={`${i}`} 
+            isDisabled={i === currentStep ? false : true}/>)
     }
 
     return (
