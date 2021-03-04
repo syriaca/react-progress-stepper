@@ -1,21 +1,20 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Button from './components/Button';
 import Stepper from './components/Stepper';
 
 const App = () => {
 
   const [step, setStep] = useState(1);
-  const [totalSteps, setTotalStep] = useState(4);
+  const totalSteps = 4;
    
   const increment = () => {
-    if(step != totalSteps) {
+    if(step !== totalSteps) {
       setStep(prevStep => prevStep + 1);
    }
-
   }
 
   const decrement = () => {
-    if(step != 1) {
+    if(step !== 1) {
       setStep(prevStep => prevStep - 1);
     }
   }
